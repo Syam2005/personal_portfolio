@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#todo">Todo</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Update the home section -->
+        <!-- Remove contact info from home section -->
+        <section id="home" class="section">
+            <div class="container">
+                <div class="hero">
+                    <h1>Hi, I'm <span class="highlight">Syamala Yasarapu</span></h1>
+                    <p class="tagline">Computer Science Engineering Student</p>
+                </div>
+                <div class="about-me">
+                    <img src="https://static.vecteezy.com/system/resources/previews/039/845/007/non_2x/placeholder-avatar-female-person-default-woman-avatar-image-gray-profile-anonymous-face-picture-illustration-isolated-on-white-vector.jpg" alt="Profile Picture" class="profile-img">
+                    <div class="about-content">
+                        <h2>About Me</h2>
+                        <p>Computer Science undergrad at Shri Vishnu Engineering College for Women with a strong foundation in Python and Data Structures. Currently maintaining a CGPA of 9.21 and actively solving problems on LeetCode with a rating of 1342.</p>
+                        <div class="education">
+                            <h3>Education</h3>
+                            <p>B.Tech in Computer Science Engineering (2023 - Present)</p>
+                            <p>Intermediate MPC - 96.9% (2021 - 2023)</p>
+                        </div>
+                        <div class="skills">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-leetcode"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Update contact section with contact info -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                
+                        
+                            
+                          
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Update the projects section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Update in the projects section -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/roomie-connect-app.png" alt="Roomie Connect" style="background-color: #fff;">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Syam2005/roomie-connect-find-another-me" class="project-link" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Roomie Connect</h3>
+                            <p>A web application that helps users find appropriate roommates based on preference filtering, lifestyle, and habits.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/play-land-app.png" alt="Play Land">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Syam2005/playland" class="project-link" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Play Land</h3>
+                            <p>A user-friendly gaming website featuring interactive games like Tic-Tac-Toe and Number Guess.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/smart-reads-app.png" alt="Smart Reads">
+                            <div class="project-overlay">
+                                <a href="https://github.com/Syam2005/smart_reads" class="project-link" target="_blank">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Smart Reads</h3>
+                            <p>A book recommendation system using Machine Learning techniques, including Item-Based and User-Based Collaborative Filtering.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Data Science</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Todo Section -->
+        <section id="todo" class="section">
+            <div class="container">
+                <h2>Task Manager</h2>
+                <div class="todo-app">
+                    <div class="todo-header">
+                        <input type="text" id="todo-input" placeholder="Add a new task...">
+                        <button id="add-todo">Add Task</button>
+                    </div>
+                    <div class="todo-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="active">Active</button>
+                        <button class="filter-btn" data-filter="completed">Completed</button>
+                    </div>
+                    <ul id="todo-list" class="todo-list"></ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <h2>Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Hackathon Winner</h3>
+                        <p>1st place in the Hackathon at INFINITY 2K25, Sir C R Reddy College of Engineering</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Anokhee by Amadeus</h3>
+                        <p>Selected among 60 students across India for mentorship program</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Foundation for Excellence</h3>
+                        <p>Awarded the Foundation for Excellence Scholarship</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fab fa-amazon"></i>
+                        <h3>Amazon Future Engineer</h3>
+                        <p>Selected for the Amazon Future Engineer Bootcamp</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section remains the same -->
+    </main>
+
+    <script src="js/features.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
